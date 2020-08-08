@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src//main//resources//Features",
         glue = "stepDefinitions",
-        tags = { "@SearchGoogle" },
+        tags = { "@SearchGoogle, @SearchGoogleFeelingLucky" },
         plugin = { "pretty", "json:target/cucumber/data.json" }
 )
 

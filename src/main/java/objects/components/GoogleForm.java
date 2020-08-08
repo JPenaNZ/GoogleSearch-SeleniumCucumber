@@ -12,6 +12,8 @@ public class GoogleForm {
 
     private By searchGoogleBtn = By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]");
 
+    private By searchFeelLuckyBtn = By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[2]");
+
     @Inject
     public GoogleForm(WebDriver webDriver) {
         this(webDriver, By.id("viewport"));
@@ -35,4 +37,7 @@ public class GoogleForm {
     public void clickGoogleBtn() {
             getSearchContext().findElement(searchGoogleBtn).click();
         }
+    public void clickFeelLuckyBtn() {
+        getSearchContext().findElement(searchFeelLuckyBtn).click();
+    }
 }
