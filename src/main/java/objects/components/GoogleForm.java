@@ -33,10 +33,7 @@ public class GoogleForm {
     public void enterSearchKeyword() {
         getSearchContext().findElement(searchKeywordFld).sendKeys("Software Testing");
     }
-
-    public void clickGoogleBtn() {
-            getSearchContext().findElement(searchGoogleBtn).click();
-        }
+    public void clickGoogleBtn() { getSearchContext().findElement(searchGoogleBtn).click(); }
     public void clickFeelLuckyBtn() {
         getSearchContext().findElement(searchFeelLuckyBtn).click();
     }
